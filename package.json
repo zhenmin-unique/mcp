@@ -1,0 +1,23 @@
+{
+  "name": "mcp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:stdio": "node src/stdio/mcp_client.js",
+    "preview:stdio": "npx @modelcontextprotocol/inspector node src/stdio/mcp_server.js",
+    "start:streamable": "node src/streamable/mcp_server.js & sleep 2 && node src/streamable/mcp_client.js",
+    "preview": "npx @modelcontextprotocol/inspector"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.5.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.1",
+    "lodash": "^4.17.21",
+    "zod": "^3.25.76"
+  }
+}
